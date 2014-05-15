@@ -17,10 +17,7 @@ uses
   frIWANewTask in 'frIWANewTask.pas' {frmIWANewTask: TIWCGJQMAjaxPageFrame},
   frIWMHome in 'frIWMHome.pas' {frmIWMHome: TIWAppForm},
   JQMDialog.Frame in 'JQMDialog.Frame.pas' {JQMDialogFrame: TIWCGJQMAjaxPageFrame},
-  frmain in 'frmain.pas' {frmMain: TIWAppForm},
-  frIWALogin in 'frIWALogin.pas' {frmIWALogin: TIWCGJQMAjaxPageFrame},
-  Unit1 in 'Unit1.pas' {IWCGJQMAjaxPageFrame1: TIWCGJQMAjaxPageFrame},
-  Unit3 in 'Unit3.pas' {IWCGJQMAjaxPageFrame3: TIWCGJQMAjaxPageFrame};
+  frIWALogin in 'frIWALogin.pas' {frmIWALogin: TIWCGJQMAjaxPageFrame};
 
 {$R *.res}
 

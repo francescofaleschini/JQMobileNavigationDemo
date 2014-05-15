@@ -120,23 +120,8 @@
 				<Form>JQMDialogFrame</Form>
 				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
 			</DCCReference>
-			<DCCReference Include="frmain.pas">
-				<Form>frmMain</Form>
-				<FormType>dfm</FormType>
-				<DesignClass>TIWAppForm</DesignClass>
-			</DCCReference>
 			<DCCReference Include="frIWALogin.pas">
 				<Form>frmIWALogin</Form>
-				<FormType>dfm</FormType>
-				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
-			</DCCReference>
-			<DCCReference Include="Unit1.pas">
-				<Form>IWCGJQMAjaxPageFrame1</Form>
-				<FormType>dfm</FormType>
-				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
-			</DCCReference>
-			<DCCReference Include="Unit3.pas">
-				<Form>IWCGJQMAjaxPageFrame3</Form>
 				<FormType>dfm</FormType>
 				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
 			</DCCReference>
@@ -206,8 +191,3 @@
 		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
 		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
 	</Project>
-
-<!-- EurekaLog First Line
-[Exception Log]
-EurekaLog Version=7001
-EurekaLog Last Line -->
