@@ -5,7 +5,7 @@
 
 *.identcache
 *.res
-.local
+*.local
 *.dres
 *.skincfg
 Win32/
