@@ -5,10 +5,10 @@ interface
 uses
   SysUtils, Classes, Controls, Forms, IWVCLBaseContainer, IWContainer, IWHTMLContainer, IWRegion,
   IWHTML40Container, IWCGJQControl, IWCGJQMPageHeader, IWCGJQMPageFooter, IWCGJQMRegion, IWCGJQMAjaxPage, IWCGJQMCommon,
-  IWCGJQMButton, IWCGJQMCheckButtons, IWCGJQMEdit, IWCGJQMLabel, IWCGJQMDialog;
+  IWCGJQMButton, IWCGJQMCheckButtons, IWCGJQMEdit, IWCGJQMLabel, IWCGJQMDialog, IWApplication, IWAppForm;
 
 type
-  TfrmIWALogin = class(TIWCGJQMAjaxPageFrame)
+  TfrmIWALogin = class(TIWAppForm)
     IWFrameRegion: TIWCGJQMRegion;
     IWCGJQMHeader: TIWCGJQMPageHeader;
     IWCGJQMFooter: TIWCGJQMPageFooter;
@@ -19,9 +19,6 @@ type
     edtPsd: TIWCGJQMEdit;
     IWCGJQMCheckButtons1: TIWCGJQMCheckButtons;
     btnLogin: TIWCGJQMButton;
-    IWCGJQMDialog1: TIWCGJQMDialog;
-    IWCGJQMLabel3: TIWCGJQMLabel;
-    IWCGJQMButton2: TIWCGJQMButton;
     procedure btnLoginJQMButtonOptionsEventsVClick(Sender: TObject;
       AParams: TStringList);
   private
@@ -39,12 +36,15 @@ procedure TfrmIWALogin.btnLoginJQMButtonOptionsEventsVClick(
 var
    fw : TfrmIWMHome;
 begin
-   IWCGJQMDialog1.JQMDialogOptions.ShowDialog;
-//   fw := TfrmIWMHome.Create(WebApplication);
-//   fw.Show;
-//   free;
+ //  IWCGJQMDialog1.JQMDialogOptions.ShowDialog;
+   fw := TfrmIWMHome.Create(WebApplication);
+   fw.Show;
+  // free;
 
 
 end;
+
+initialization
+  TfrmIWALogin.SetAsMainForm;
 
 end.

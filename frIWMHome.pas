@@ -14,6 +14,8 @@ type
     IWCGJQMFooter: TIWCGJQMPageFooter;
     IWCGJQMContent: TIWCGJQMRegion;
     IWCGJQMListView1: TIWCGJQMListView;
+    procedure IWCGJQMListView1IWCGJQMListItems0EventsVClick(Sender: TObject;
+      AParams: TStringList);
   private
     { Private declarations }
   public
@@ -23,5 +25,13 @@ type
 implementation
 
 {$R *.dfm}
+
+
+
+procedure TfrmIWMHome.IWCGJQMListView1IWCGJQMListItems0EventsVClick(
+  Sender: TObject; AParams: TStringList);
+begin
+  webapplication.showmessage('How to open in ajax way a TfrmIWAMsgs form?');
+end;
 
 end.

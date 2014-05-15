@@ -45,6 +45,7 @@ object frmIWMHome: TfrmIWMHome
           item
             Header = 'Messages'
             Events.OnVClick.Ajax = False
+            Events.OnVClick.OnEvent = IWCGJQMListView1IWCGJQMListItems0EventsVClick
           end
           item
             Header = 'Tasks'
