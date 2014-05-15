@@ -16,7 +16,6 @@ uses
   frIWANewMsg in 'frIWANewMsg.pas' {frmIWANewMsg: TIWCGJQMAjaxPageFrame},
   frIWANewTask in 'frIWANewTask.pas' {frmIWANewTask: TIWCGJQMAjaxPageFrame},
   frIWMHome in 'frIWMHome.pas' {frmIWMHome: TIWAppForm},
-  JQMDialog.Frame in 'JQMDialog.Frame.pas' {JQMDialogFrame: TIWCGJQMAjaxPageFrame},
   frIWALogin in 'frIWALogin.pas' {frmIWALogin: TIWCGJQMAjaxPageFrame};
 
 {$R *.res}

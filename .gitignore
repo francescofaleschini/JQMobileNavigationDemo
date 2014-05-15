@@ -3,6 +3,7 @@
 ## Delphi
 #################
 
+*.identcache
 *.res
 .local
 *.dres

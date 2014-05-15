@@ -116,10 +116,6 @@
 				<FormType>dfm</FormType>
 				<DesignClass>TIWAppForm</DesignClass>
 			</DCCReference>
-			<DCCReference Include="JQMDialog.Frame.pas">
-				<Form>JQMDialogFrame</Form>
-				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
-			</DCCReference>
 			<DCCReference Include="frIWALogin.pas">
 				<Form>frmIWALogin</Form>
 				<FormType>dfm</FormType>
