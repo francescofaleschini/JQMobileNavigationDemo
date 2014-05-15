@@ -3,15 +3,17 @@ unit frIWMHome;
 interface
 
 uses
-  SysUtils, Classes, Controls, Forms, IWVCLBaseContainer, IWContainer, IWHTMLContainer, IWRegion,
-  IWHTML40Container, IWCGJQControl, IWCGJQMPageHeader, IWCGJQMPageFooter, IWCGJQMRegion, IWCGJQMAjaxPage, IWCGJQMCommon;
+  SysUtils, Classes, Controls, Forms, IWVCLBaseContainer, IWContainer, IWHTMLContainer, IWRegion, IWAppForm,
+  IWHTML40Container, IWCGJQControl, IWCGJQMPageHeader, IWCGJQMPageFooter, IWCGJQMRegion, IWCGJQMAjaxPage, IWCGJQMCommon,
+  IWCGJQMListView;
 
 type
-  TfrmIWMHome = class(TIWCGJQMAjaxPageFrame)
-    IWFrameRegion: TIWCGJQMRegion;
+  TfrmIWMHome = class(TIWAppForm)
+    IWCGJQMPage: TIWCGJQMRegion;
     IWCGJQMHeader: TIWCGJQMPageHeader;
     IWCGJQMFooter: TIWCGJQMPageFooter;
     IWCGJQMContent: TIWCGJQMRegion;
+    IWCGJQMListView1: TIWCGJQMListView;
   private
     { Private declarations }
   public

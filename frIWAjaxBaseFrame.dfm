@@ -1,21 +1,10 @@
-object frmIWMHome: TfrmIWMHome
+object frmIWAjaxBaseFrame: TfrmIWAjaxBaseFrame
   Left = 0
   Top = 0
   Width = 350
   Height = 500
-  RenderInvisibleControls = False
-  AllowPageAccess = True
-  ConnectionMode = cmAny
-  Background.Fixed = False
-  HandleTabs = False
-  LeftToRight = True
-  LockUntilLoaded = True
-  LockOnSubmit = True
-  ShowHint = True
-  XPTheme = True
-  DesignLeft = 8
-  DesignTop = 8
-  object IWCGJQMPage: TIWCGJQMRegion
+  TabOrder = 0
+  object IWFrameRegion: TIWCGJQMRegion
     Left = 0
     Top = 0
     Width = 350
@@ -33,29 +22,6 @@ object frmIWMHome: TfrmIWMHome
       Version = '1.0'
       Align = alClient
       RegionType = jqmrtContent
-      object IWCGJQMListView1: TIWCGJQMListView
-        Left = 0
-        Top = 0
-        Width = 350
-        Height = 414
-        TabOrder = 0
-        Version = '1.0'
-        Align = alClient
-        Items = <
-          item
-            Header = 'Messages'
-            Events.OnVClick.Ajax = False
-          end
-          item
-            Header = 'Tasks'
-          end
-          item
-            Header = 'Documents'
-          end
-          item
-            Header = 'Addressbook'
-          end>
-      end
     end
     object IWCGJQMFooter: TIWCGJQMPageFooter
       Left = 0
@@ -65,6 +31,7 @@ object frmIWMHome: TfrmIWMHome
       TabOrder = 2
       Version = '1.0'
       JQMPageFooterOptions.Role = 'footer'
+      JQMPageFooterOptions.Caption = 'Logged in User Name'
       JQMToolBarButtons = <>
     end
     object IWCGJQMHeader: TIWCGJQMPageHeader
@@ -74,11 +41,12 @@ object frmIWMHome: TfrmIWMHome
       Height = 43
       TabOrder = 0
       Version = '1.0'
-      JQMPageHeaderOptions.Caption = 'Home'
+      JQMPageHeaderOptions.LeftButton.Enable = True
+      JQMPageHeaderOptions.LeftButton.Caption = 'Back'
+      JQMPageHeaderOptions.LeftButton.Icon = jqmisBack
       JQMPageHeaderOptions.LeftButton.ID = 'IWCGJQMHEADER_LeftButton'
       JQMPageHeaderOptions.RightButton.Enable = True
       JQMPageHeaderOptions.RightButton.Caption = 'Logout'
-      JQMPageHeaderOptions.RightButton.Icon = jqmisInfo
       JQMPageHeaderOptions.RightButton.ID = 'IWCGJQMHEADER_RightButton'
       JQMPageHeaderOptions.Role = 'header'
     end

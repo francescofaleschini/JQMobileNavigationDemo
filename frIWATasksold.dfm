@@ -1,0 +1,2 @@
+inherited frmIWATasks: TfrmIWATasks
+end

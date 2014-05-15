@@ -1,58 +1,37 @@
-object frmIWHome: TfrmIWHome
-  Left = 0
-  Top = 0
-  Width = 300
+inherited frmIWHome: TfrmIWHome
   Height = 449
-  RenderInvisibleControls = False
-  AllowPageAccess = True
-  ConnectionMode = cmAny
-  Background.Fixed = False
-  HandleTabs = False
-  LeftToRight = True
-  LockUntilLoaded = True
-  LockOnSubmit = True
-  ShowHint = True
-  XPTheme = True
+  ExplicitHeight = 449
   DesignLeft = 8
   DesignTop = 8
-  object IWCGJQMHeader: TIWCGJQMPageHeader
-    Left = 0
-    Top = 0
-    Width = 300
-    Height = 43
-    TabOrder = 0
-    Version = '1.0'
-    JQMPageHeaderOptions.Caption = 'TIWAppForm'
-    JQMPageHeaderOptions.LeftButton.ID = 'IWCGJQMHEADER_LeftButton'
-    JQMPageHeaderOptions.RightButton.ID = 'IWCGJQMHEADER_RightButton'
-    JQMPageHeaderOptions.Role = 'header'
+  inherited IWCGJQMPageHeader1: TIWCGJQMPageHeader
+    JQMPageHeaderOptions.LeftButton.Enable = False
+    JQMPageHeaderOptions.LeftButton.Caption = ''
+    JQMPageHeaderOptions.LeftButton.Corners = False
+    JQMPageHeaderOptions.LeftButton.Events.OnVClick.OnEvent = nil
+    ExplicitWidth = 312
   end
-  object IWCGJQMFooter: TIWCGJQMPageFooter
-    Left = 0
+  inherited IWCGJQMPageFooter1: TIWCGJQMPageFooter
     Top = 406
-    Width = 300
-    Height = 43
-    TabOrder = 2
-    Version = '1.0'
-    JQMPageFooterOptions.Role = 'footer'
-    JQMToolBarButtons = <>
+    ExplicitLeft = 0
+    ExplicitTop = 406
+    ExplicitWidth = 312
   end
-  object IWCGJQMRegion1: TIWCGJQMRegion
-    Left = 0
-    Top = 43
-    Width = 300
+  inherited IWCGJQMRegion1: TIWCGJQMRegion
     Height = 363
-    TabOrder = 1
-    Version = '1.0'
-    Align = alClient
+    ExplicitLeft = 0
+    ExplicitTop = 43
+    ExplicitWidth = 312
+    ExplicitHeight = 363
     object IWCGJQMListView1: TIWCGJQMListView
       Left = 0
       Top = 0
-      Width = 300
+      Width = 312
       Height = 363
+      OnRender = IWCGJQMListView1Render
       TabOrder = 0
       Version = '1.0'
       Align = alClient
+      OnCreate = IWCGJQMListView1Create
       Items = <
         item
           Header = 'Messages'

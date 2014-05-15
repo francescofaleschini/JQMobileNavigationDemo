@@ -1,0 +1,2 @@
+inherited frmIWAjaxBaseFrame2: TfrmIWAjaxBaseFrame2
+end

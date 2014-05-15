@@ -75,10 +75,6 @@
 			<DelphiCompile Include="$(MainSource)">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="frIWLogin.pas">
-				<Form>frmIWLogin</Form>
-				<DesignClass>TIWAppForm</DesignClass>
-			</DCCReference>
 			<DCCReference Include="ServerController.pas">
 				<Form>IWServerController</Form>
 				<DesignClass>TIWServerControllerBase</DesignClass>
@@ -87,12 +83,60 @@
 				<Form>IWUserSession</Form>
 				<DesignClass>TIWUserSessionBase</DesignClass>
 			</DCCReference>
-			<DCCReference Include="frIWHome.pas">
-				<Form>frmIWHome</Form>
-				<DesignClass>TIWAppForm</DesignClass>
+			<DCCReference Include="frIWAjaxBaseFrame.pas">
+				<Form>IWCGJQMAjaxPageFrame2</Form>
+				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="frIWAMsgs.pas">
+				<Form>frmIWAMsgs</Form>
+				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="frIWATasks.pas">
+				<Form>frmIWATasks</Form>
+				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="frIWADocs.pas">
+				<Form>frmIWADocs</Form>
+				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="frIWACustomers.pas">
+				<Form>frmIWACustomers</Form>
+				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="frIWANewMsg.pas">
+				<Form>frmIWANewMsg</Form>
+				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="frIWANewTask.pas">
+				<Form>frmIWANewTask</Form>
+				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
 			</DCCReference>
 			<DCCReference Include="frIWMHome.pas">
 				<Form>frmIWMHome</Form>
+				<FormType>dfm</FormType>
+				<DesignClass>TIWAppForm</DesignClass>
+			</DCCReference>
+			<DCCReference Include="JQMDialog.Frame.pas">
+				<Form>JQMDialogFrame</Form>
+				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="frmain.pas">
+				<Form>frmMain</Form>
+				<FormType>dfm</FormType>
+				<DesignClass>TIWAppForm</DesignClass>
+			</DCCReference>
+			<DCCReference Include="frIWALogin.pas">
+				<Form>frmIWALogin</Form>
+				<FormType>dfm</FormType>
+				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Unit1.pas">
+				<Form>IWCGJQMAjaxPageFrame1</Form>
+				<FormType>dfm</FormType>
+				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Unit3.pas">
+				<Form>IWCGJQMAjaxPageFrame3</Form>
 				<FormType>dfm</FormType>
 				<DesignClass>TIWCGJQMAjaxPageFrame</DesignClass>
 			</DCCReference>

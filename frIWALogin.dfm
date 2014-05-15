@@ -1,39 +1,29 @@
-object frmIWLogin: TfrmIWLogin
+object frmIWALogin: TfrmIWALogin
   Left = 0
   Top = 0
   Width = 350
-  Height = 412
-  RenderInvisibleControls = False
-  AllowPageAccess = True
-  ConnectionMode = cmAny
-  OnCreate = IWAppFormCreate
-  Background.Fixed = False
-  HandleTabs = False
-  LeftToRight = True
-  LockUntilLoaded = True
-  LockOnSubmit = True
-  ShowHint = True
-  XPTheme = True
-  DesignLeft = 8
-  DesignTop = 8
-  object IWCGJQMPage: TIWCGJQMRegion
+  Height = 463
+  TabOrder = 0
+  object IWFrameRegion: TIWCGJQMRegion
     Left = 0
     Top = 0
     Width = 350
-    Height = 412
+    Height = 463
     TabOrder = 0
     Version = '1.0'
     Align = alClient
     RegionType = jqmrtPage
+    ExplicitHeight = 500
     object IWCGJQMContent: TIWCGJQMRegion
       Left = 0
       Top = 43
       Width = 350
-      Height = 326
+      Height = 377
       TabOrder = 1
       Version = '1.0'
       Align = alClient
       RegionType = jqmrtContent
+      ExplicitHeight = 414
       object IWCGJQMLabel2: TIWCGJQMLabel
         Left = 0
         Top = 0
@@ -43,6 +33,7 @@ object frmIWLogin: TfrmIWLogin
         Version = '1.0'
         Text = '   User'
         LabelOptions.GoogleMapOptions.Parameters = <>
+        ExplicitLeft = 3
       end
       object edtUser: TIWCGJQMEdit
         Left = 0
@@ -51,6 +42,7 @@ object frmIWLogin: TfrmIWLogin
         Height = 51
         TabOrder = 1
         Version = '1.0'
+        ExplicitTop = 8
       end
       object IWCGJQMLabel1: TIWCGJQMLabel
         Left = 0
@@ -61,6 +53,7 @@ object frmIWLogin: TfrmIWLogin
         Version = '1.0'
         Text = 'Password'
         LabelOptions.GoogleMapOptions.Parameters = <>
+        ExplicitTop = 61
       end
       object edtPsd: TIWCGJQMEdit
         Left = 0
@@ -70,6 +63,7 @@ object frmIWLogin: TfrmIWLogin
         TabOrder = 3
         Version = '1.0'
         JQMEditOptions.EditType = jqmetPassword
+        ExplicitTop = 87
       end
       object IWCGJQMCheckButtons1: TIWCGJQMCheckButtons
         Left = 0
@@ -83,6 +77,7 @@ object frmIWLogin: TfrmIWLogin
           item
             Caption = 'Remember me'
           end>
+        ExplicitTop = 138
       end
       object btnLogin: TIWCGJQMButton
         Left = 0
@@ -95,19 +90,19 @@ object frmIWLogin: TfrmIWLogin
         JQMButtonOptions.Events.OnVClick.Ajax = False
         JQMButtonOptions.Events.OnVClick.OnEvent = btnLoginJQMButtonOptionsEventsVClick
         JQMButtonOptions.Label_ = 'Login'
-        ExplicitTop = 201
+        ExplicitTop = 179
       end
     end
     object IWCGJQMFooter: TIWCGJQMPageFooter
       Left = 0
-      Top = 369
+      Top = 420
       Width = 350
       Height = 43
       TabOrder = 3
       Version = '1.0'
       JQMPageFooterOptions.Role = 'footer'
-      JQMPageFooterOptions.Caption = '<span style="font-size:75%">Welcome to QMobile</span>'
       JQMToolBarButtons = <>
+      ExplicitTop = 457
     end
     object IWCGJQMHeader: TIWCGJQMPageHeader
       Left = 0
@@ -116,14 +111,13 @@ object frmIWLogin: TfrmIWLogin
       Height = 43
       TabOrder = 0
       Version = '1.0'
-      JQMPageHeaderOptions.Caption = '<span style="font-size:120%">Login</span>'
       JQMPageHeaderOptions.LeftButton.ID = 'IWCGJQMHEADER_LeftButton'
       JQMPageHeaderOptions.RightButton.ID = 'IWCGJQMHEADER_RightButton'
       JQMPageHeaderOptions.Role = 'header'
     end
     object IWCGJQMDialog1: TIWCGJQMDialog
       Left = 40
-      Top = 144
+      Top = 279
       Width = 289
       Height = 161
       TabOrder = 2
